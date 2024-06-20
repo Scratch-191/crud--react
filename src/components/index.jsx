@@ -13,6 +13,7 @@ function Index() {
   const addTask = () =>{
     const NewTodoList = [...todoList, newTask]
     setTodoList(NewTodoList);
+    
 
   };
   return (
@@ -25,7 +26,10 @@ function Index() {
 
     <div className='list'>
     {todoList.map((task,index) => {
-      return <h1>{task}</h1>
+      return (
+      <div><h1>{task}</h1>
+      <button> X </button>
+      </div>)
     })}
     </div>
     </div>
