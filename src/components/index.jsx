@@ -11,11 +11,21 @@ function Index() {
   };
  
   const addTask = () =>{
-    const NewTodoList = [...todoList, newTask]
-    setTodoList(NewTodoList);
+    setTodoList([...todoList, newTask]);
     
 
   };
+  
+  const deleteTask = (taskName) =>{
+    const newTodoList = todoList.filter((task) =>{
+      if (task === taskName){
+        return false;
+      } else {
+       return true;
+      }
+     });
+    setTodoList(newTodoList);
+  }; 
   return (
 
 
@@ -26,10 +36,12 @@ function Index() {
 
     <div className='list'>
     {todoList.map((task,index) => {
-      return (
-      <div><h1>{task}</h1>
-      <button> X </button>
-      </div>)
+      return(
+        <div>
+        <h1>{task}</h1>
+        <button onClick={() => deleteTask (task)}> X </button>
+        </div>
+      );
     })}
     </div>
     </div>
