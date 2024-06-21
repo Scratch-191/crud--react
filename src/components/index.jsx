@@ -30,6 +30,25 @@ function Index() {
      });
     setTodoList(newTodoList);
   }; 
+ 
+ 
+
+  const complete = () =>{
+    const strikeThrough = todoList.map((task) => {
+      if (task.taskName === task.taskName){
+        return{
+          ...task,
+          taskName: <strike>{task.taskName}</strike>
+        };
+      } else {
+        return task;
+      }
+    });
+    setTodoList(strikeThrough);
+  };
+
+
+
   return (
 
 
@@ -46,7 +65,7 @@ function Index() {
         <h1>{task.taskName}</h1>
        
         <button onClick={() => deleteTask (task.id)}> X </button>
-        <button className='button5'>Completed</button>
+        <button onClick={complete} className='button5'>Completed</button>
         </div>
       );
     })}

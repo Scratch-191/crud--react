@@ -22,11 +22,10 @@ background-color: black;
   margin-left: 50px;
   width: 15%;
   border-radius: 10px;
+  font-size: 15px;
 }
 .button5:hover {
-  background-color: rgb(17, 16, 16); 
+  background-color: rgb(8, 8, 8); 
   color: white;
   border: 1px solid white; 
-
-  
 }
