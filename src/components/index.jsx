@@ -15,10 +15,7 @@ function Index() {
       id :todoList.length=== 0 ? 1 : todoList[todoList.length -1].id + 1 ,
       taskName : newTask,
     };
-    const taskName ={
-      id :todoList.length=== 0 ? 1 : todoList[todoList.length -1].id + 1 ,
-      taskName : newTask,
-    };
+    
     setTodoList([...todoList, task]);
     
 
