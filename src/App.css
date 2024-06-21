@@ -8,3 +8,25 @@ background-color: black;
   font-size: medium;
   color: white;
 }
+.taskButton{
+  background-color: white;
+  
+}
+.addTask{
+  height: 100%;
+  width: 100%;
+}
+
+.button5{
+  transition-duration: 0.4s;
+  margin-left: 50px;
+  width: 15%;
+  border-radius: 10px;
+}
+.button5:hover {
+  background-color: rgb(17, 16, 16); 
+  color: white;
+  border: 1px solid white; 
+
+  
+}

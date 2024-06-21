@@ -34,19 +34,19 @@ function Index() {
 
 
     <div>
-    <div className='addTask'></div>
+    <div className='addTask'>
      <input onChange={handleChange}/>
-     <button onClick={addTask}> Add Task</button>
-
+     <button className='taskButton' onClick={addTask}> Add Task</button>
+     </div>
     <div className='list'>
     {todoList.map((task,index) => {
       return(
-        <div>
+        <div className='x--button'>
         
         <h1>{task.taskName}</h1>
        
         <button onClick={() => deleteTask (task.id)}> X </button>
-        
+        <button className='button5'>Completed</button>
         </div>
       );
     })}
