@@ -39,7 +39,7 @@ function Index() {
       if (task.taskName === selectedTaskName) {
         return {
           ...task,
-          taskName: <strike>{task.taskName}</strike>,
+          taskName: <strike className >{task.taskName}</strike>,
         };
       } else {
         return task;

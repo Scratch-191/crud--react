@@ -24,8 +24,8 @@ background-color: black;
   border-radius: 10px;
   font-size: 15px;
 }
-/* .button5:hover {
+.button5:hover {
   background-color: rgb(8, 8, 8); 
   color: white;
   border: 1px solid white; 
-} */
+} 
